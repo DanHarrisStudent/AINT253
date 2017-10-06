@@ -19,9 +19,7 @@ public class DoorCollision : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {
-            _animator.SetBool("open", true);
-            _audio.Play();
+        {        
 
             m_animator.SetBool("open", true);
             m_sound.Play();
